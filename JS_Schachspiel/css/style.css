@@ -1,0 +1,50 @@
+#gameboard {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.square svg {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    position: relative;
+    z-index: -9; /* legt Felder in den Hintergrund, damit nur pieces gewählt werden können */
+}
+
+path {
+    position: relative;
+    z-index: -10;    
+}
+
+.piece {
+    position: relative;
+    z-index: 9;
+}
+
+
+/* squares */
+.red {
+    background-color: #ff0045;
+}
+
+.grey {
+    background-color: #5a3535;
+}
+
+/* figures mit fill, weil SVG*/
+
+.black {
+    fill: black;
+}
+
+.white {
+    fill: white;
+}
